@@ -1,0 +1,1 @@
+# javascript-basic-syntax-trainig
