@@ -1,0 +1,22 @@
+{
+  "name": "jscript-basic-syntax-traning",
+  "version": "1.0.0",
+  "description": "some exercise about JS basic syntax",
+  "main": "master",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElviraCher/javascript-basic-syntax-trainig.git"
+  },
+  "author": "Elvira Cherkasova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElviraCher/javascript-basic-syntax-trainig/issues"
+  },
+  "homepage": "https://github.com/ElviraCher/javascript-basic-syntax-trainig#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
