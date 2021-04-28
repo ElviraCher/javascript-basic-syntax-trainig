@@ -29,4 +29,4 @@ valuesWith1Root.forEach(([num1, num2, num3, result]) => {
         expect(findRootOfEquation(5, 11, 18)).toBe('Since the discriminant is less than zero, the equation has no real solutions.')
     });
 
-    
+
