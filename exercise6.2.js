@@ -1,6 +1,5 @@
 function isWord(string) {
-    return !string.includes(' ');
+  return !string.includes(" ");
 }
 
 module.exports = isWord;
-

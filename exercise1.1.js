@@ -1,10 +1,7 @@
-'use strict';
-
-function multAndSum (a, b) {
-    let mult = a * b;
-    let sum = a + b;
-    return [mult, sum];
+function multAndSum(a, b) {
+  const mult = a * b;
+  const sum = a + b;
+  return [mult, sum];
 }
 
 module.exports = multAndSum;
-
