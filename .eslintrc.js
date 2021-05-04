@@ -13,6 +13,7 @@ module.exports = {
     "no-console": "off",
     "no-alert": "off",
     "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
     "max-len": ["error", { ignoreComments: true }],
   },
   plugins: ["jest"],
