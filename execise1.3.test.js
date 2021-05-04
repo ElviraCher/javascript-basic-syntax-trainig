@@ -16,26 +16,22 @@ describe("sumOfNums", () => {
     expect(sumOfNums).toBeInstanceOf(Function);
   });
 
-  it("calls console.log", () => {
-    expect(console.log).not.toHaveBeenCalled();
-    sumOfNums();
-    expect(console.log).toHaveBeenCalled();
-  });
-
   const values = [
     ["123", 6],
     ["111", 3],
     ["555", 15],
   ];
   values.forEach(([input, expectedResult]) => {
-    it(`called function with user's input ${input}, expect ${expectedResult}`, () => {
+    it(`calls with user's input ${input}, expect ${expectedResult}`, () => {
+      expect(console.log).not.toHaveBeenCalled();
       jest.spyOn(window, "prompt").mockImplementation(() => input);
       sumOfNums();
+      expect(console.log).toHaveBeenCalled();
       expect(console.log).toHaveBeenCalledWith(expectedResult);
     });
   });
 
-  it("bad user input", () => {
+  it("calls with bad user input", () => {
     jest.spyOn(window, "prompt").mockImplementation(() => "input");
     sumOfNums();
     expect(console.log).toHaveBeenCalledWith(
