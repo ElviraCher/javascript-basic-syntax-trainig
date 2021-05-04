@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/ElviraCher/javascript-basic-syntax-trainig#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
     "@types/jest": "^26.0.23",
+    "babel-jest": "^26.6.3",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
