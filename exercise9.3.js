@@ -11,7 +11,10 @@ function findRootOfEquation(num1, num2, num3) {
     return [x1.toFixed(1), x2.toFixed(1)];
   }
   if (d < 0) {
-    return "Since the discriminant is less than zero, the equation has no real solutions.";
+    return (
+      "Since the discriminant is less than zero," +
+      " the equation has no real solutions."
+    );
   }
   const x = -(b / (2 * a));
   return x.toFixed(2);
