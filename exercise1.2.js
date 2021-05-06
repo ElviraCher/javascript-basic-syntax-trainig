@@ -1,6 +1,3 @@
-function getStringsLength(str1, str2) {
-  // console.log(str1.length + str2.length);
+export function getStringsLength(str1, str2) {
   return str1.length + str2.length;
 }
-
-module.exports = getStringsLength;
