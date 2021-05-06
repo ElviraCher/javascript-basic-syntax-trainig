@@ -1,4 +1,4 @@
-const diff = require("./exercise6.1");
+import { diff } from "./exercise6.1";
 
 it("return difference between higher and lower number", () => {
   expect(diff(6, 8)).toBe(2);
