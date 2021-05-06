@@ -1,17 +1,20 @@
 const multAndSum = require("./exercise1.1");
 
-it("Multiplication: 12 * 3 = 36, sum: 12 + 3 = 15", () => {
-  expect(multAndSum(12, 3)).toEqual([36, 15]);
-});
+describe("multAndSum", () => {
+  it("is a function", () => {
+    expect(multAndSum).toBeInstanceOf(Function);
+  });
 
-it("Multiplication: 2 * 2 = 4, sum: 2 + 2 = 4", () => {
-  expect(multAndSum(2, 2)).toEqual([4, 4]);
-});
-
-it("Multiplication: 0 * 2 = 0, sum: 0 + 2 = 2", () => {
-  expect(multAndSum(0, 2)).toEqual([0, 2]);
-});
-
-it("Multiplication: -5 * 5 = 25, sum: -5 + 5 = 0", () => {
-  expect(multAndSum(-5, 5)).toEqual([-25, 0]);
+  const values = [
+    [12, 3, [36, 15]],
+    [2, 2, [4, 4]],
+    [0, 2, [0, 2]],
+    [-5, 5, [-25, 0]],
+  ];
+  values.forEach(([num1, num2, result]) => {
+    it(`Multiplication: ${num1} * ${num2} = ${result[0]}, 
+    sum: ${num1} + ${num2} = ${result[1]}`, () => {
+      expect(multAndSum(num1, num2)).toEqual(result);
+    });
+  });
 });
