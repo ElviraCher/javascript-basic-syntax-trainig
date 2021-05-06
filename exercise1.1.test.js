@@ -1,4 +1,4 @@
-const multAndSum = require("./exercise1.1");
+import { multAndSum } from "./exercise1.1";
 
 describe("multAndSum", () => {
   it("is a function", () => {
