@@ -1,4 +1,4 @@
-function isTriangleRight(a, b, c) {
+export function isTriangleRight(a, b, c) {
   const max = Math.max(a, b, c);
   const min = Math.min(a, b, c);
   let third;
@@ -13,5 +13,3 @@ function isTriangleRight(a, b, c) {
 
   return max ** 2 === min ** 2 + third ** 2;
 }
-
-module.exports = isTriangleRight;

@@ -1,4 +1,4 @@
-const isTriangleRight = require("./exercise9.1");
+import { isTriangleRight } from "./exercise9.1";
 
 const sidesRight = [
   [3, 4, 5],
