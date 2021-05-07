@@ -1,11 +1,7 @@
 export function getDayOfWeek(input) {
-  const date = new Date(
-    `${input[6]}${input[7]}
-    ${input[8]}${input[9]}-
-    ${input[3]}${input[4]}-
-    ${input[0]}${input[1]}`
-  );
-  const dayOfWeek = date.getDay();
+  const [day, month, year] = input.split(".");
+  const date = Date.parse(`${year}-${month}-${day}`);
+  const dayOfWeek = new Date(date).getDay();
   switch (dayOfWeek) {
     case 0:
       return "Sunday";
