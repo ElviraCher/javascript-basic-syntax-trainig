@@ -1,4 +1,4 @@
-function findRootOfEquation(num1, num2, num3) {
+export function findRootOfEquation(num1, num2, num3) {
   const a = parseInt(num1, 10);
   const b = parseInt(num2, 10);
   const c = parseInt(num3, 10);
@@ -19,5 +19,3 @@ function findRootOfEquation(num1, num2, num3) {
   const x = -(b / (2 * a));
   return x.toFixed(2);
 }
-
-module.exports = findRootOfEquation;

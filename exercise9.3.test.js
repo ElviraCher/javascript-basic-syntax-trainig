@@ -1,4 +1,4 @@
-const findRootOfEquation = require("./exercise9.3");
+import { findRootOfEquation } from "./exercise9.3";
 
 describe("findRootOfEquation", () => {
   const valuesWith2Roots = [
