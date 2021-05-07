@@ -1,4 +1,4 @@
-const getDayOfWeek = require("./exercise8.1");
+import { getDayOfWeek } from "./exercise8.1";
 
 const datesAndDays = [
   ["27.04.2020", "Monday"],

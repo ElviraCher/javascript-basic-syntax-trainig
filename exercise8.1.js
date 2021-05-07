@@ -1,4 +1,4 @@
-function getDayOfWeek(input) {
+export function getDayOfWeek(input) {
   const date = new Date(
     `${input[6]}${input[7]}
     ${input[8]}${input[9]}-
@@ -25,5 +25,3 @@ function getDayOfWeek(input) {
       return null;
   }
 }
-
-module.exports = getDayOfWeek;
