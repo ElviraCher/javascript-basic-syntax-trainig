@@ -1,4 +1,4 @@
-const pow = require("./exercise6.3");
+import { pow } from "./exercise6.3";
 
 const values = [
   [2, 3, 8],
