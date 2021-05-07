@@ -1,5 +1,3 @@
-function isWord(string) {
+export function isWord(string) {
   return !string.includes(" ");
 }
-
-module.exports = isWord;

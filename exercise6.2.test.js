@@ -1,4 +1,4 @@
-const isWord = require("./exercise6.2");
+import { isWord } from "./exercise6.2";
 
 describe("isWord", () => {
   it("is a function", () => {
