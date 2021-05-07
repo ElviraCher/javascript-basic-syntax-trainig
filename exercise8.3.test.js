@@ -1,4 +1,4 @@
-const findYoungerPerson = require("./exercise8.3");
+import { findYoungerPerson } from "./exercise8.3";
 
 const birthdays = [
   ["1984.03.19", "1983.05.22", "1984.03.19"],
