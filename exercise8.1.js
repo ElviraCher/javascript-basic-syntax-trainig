@@ -1,6 +1,9 @@
 function getDayOfWeek(input) {
   const date = new Date(
-    `${input[6]}${input[7]}${input[8]}${input[9]}-${input[3]}${input[4]}-${input[0]}${input[1]}`
+    `${input[6]}${input[7]}
+    ${input[8]}${input[9]}-
+    ${input[3]}${input[4]}-
+    ${input[0]}${input[1]}`
   );
   const dayOfWeek = date.getDay();
   switch (dayOfWeek) {
