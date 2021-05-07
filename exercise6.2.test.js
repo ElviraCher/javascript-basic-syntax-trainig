@@ -1,11 +1,24 @@
 const isWord = require("./exercise6.2");
 
-it("word without space to be true word", () => {
-  expect(isWord("mother")).toBeTruthy();
-  expect(isWord("JavaScript")).toBeTruthy();
-});
+describe("isWord", () => {
+  it("is a function", () => {
+    expect(isWord).toBeInstanceOf(Function);
+  });
+  const words = ["mother", "programming", "cat"];
+  words.forEach(([word]) => {
+    it(`${word} is a word`, () => {
+      expect(isWord(word)).toBeTruthy();
+    });
+  });
 
-it("some words with space between it to be false, because it is not word", () => {
-  expect(isWord("JavaScript Basic")).toBeFalsy();
-  expect(isWord("I want to sleep")).toBeFalsy();
+  const strings = [
+    "JavaScript Basic",
+    "programming is cool",
+    "I want to sleep",
+  ];
+  strings.forEach(([string]) => {
+    it(`${string} is not a word`, () => {
+      expect(isWord(string)).toBeFalsy();
+    });
+  });
 });
