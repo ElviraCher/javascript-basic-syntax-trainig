@@ -1,4 +1,4 @@
-function getResultFromMatchingStringWithRegexp(str) {
+export function getResultFromMatchingStringWithRegexp(str) {
   const date = /[1-3]\d?[/-]\d{2}[/-]\d{2,4}/g;
   const phoneNumber = /^((8|\+7)[- ]?)?(\(?\d{3}\)?[- ]?)?[\d\- ]{7,10}$/;
   const emailAddress = /[\da-z]+@[\da-z]+\.[a-z]+/;
@@ -13,5 +13,3 @@ function getResultFromMatchingStringWithRegexp(str) {
   }
   return result;
 }
-
-module.exports = getResultFromMatchingStringWithRegexp;

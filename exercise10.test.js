@@ -1,4 +1,4 @@
-const getResultFromMatchingStringWithRegexp = require("./exercise10");
+import { getResultFromMatchingStringWithRegexp } from "./exercise10";
 
 describe("getResultFromMatchingStringWithRegexp", () => {
   it("value is a date", () => {
