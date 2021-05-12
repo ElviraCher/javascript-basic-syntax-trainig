@@ -5,7 +5,7 @@ export function getAdminNameAgeRole() {
   user.age = +prompt("Enter your age", "");
   console.log(user);
 
-  const admin = { ...user, role: "admin"};
+  const admin = { ...user, role: "admin" };
   console.log(admin);
 
   const { name, age, role } = admin;

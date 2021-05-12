@@ -57,7 +57,7 @@ describe("getAdminNameAgeRole", () => {
     it("create copy of user object with new role", () => {
       jest.spyOn(window, "prompt").mockImplementation(() => user.age);
       getAdminNameAgeRole();
-      const newAdmin = { ...user, role: "admin"};
+      const newAdmin = { ...user, role: "admin" };
       expect(newAdmin).toEqual(admin);
       expect(console.log).toHaveBeenCalledWith(admin);
     });
