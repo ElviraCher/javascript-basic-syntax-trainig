@@ -12,9 +12,9 @@ describe("isWord", () => {
   });
 
   const strings = [
-    "JavaScript Basic",
-    "programming is cool",
-    "I want to sleep",
+    ["JavaScript Basic"],
+    ["programming is cool"],
+    ["I want to sleep"],
   ];
   strings.forEach(([string]) => {
     it(`${string} is not a word`, () => {

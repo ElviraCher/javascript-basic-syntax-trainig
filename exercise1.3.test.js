@@ -1,4 +1,4 @@
-import { sumOfNums } from "exercise1.3";
+import { sumOfNums } from "./exercise1.3";
 
 describe("sumOfNums", () => {
   let log;
