@@ -1,45 +1,6 @@
 export function getMonthName() {
   const num = prompt("Enter number from 1 to 12:", "");
-
-  switch (num) {
-    case "1":
-      console.log("January");
-      break;
-    case "2":
-      console.log("February");
-      break;
-    case "3":
-      console.log("March");
-      break;
-    case "4":
-      console.log("April");
-      break;
-    case "5":
-      console.log("May");
-      break;
-    case "6":
-      console.log("June");
-      break;
-    case "7":
-      console.log("July");
-      break;
-    case "8":
-      console.log("August");
-      break;
-    case "9":
-      console.log("September");
-      break;
-    case "10":
-      console.log("October");
-      break;
-    case "11":
-      console.log("November");
-      break;
-    case "12":
-      console.log("December");
-      break;
-    default:
-      console.log("You should enter a number from 0 to 12");
-      break;
-  }
+  const nums = [undefined, "January", "February", "March", "April", "May",
+    "June", "July", "August", "September", "November", "December"];
+  console.log(nums[num]);
 }
