@@ -3,3 +3,4 @@ node_modules/
 .eslintcache/
 .prettierignore
 .prettierrc.json
+coverage/
