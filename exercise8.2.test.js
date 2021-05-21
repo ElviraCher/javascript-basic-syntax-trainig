@@ -15,7 +15,6 @@ describe("getTodayPassMinutes", () => {
   });
 
   it("calls console.log", () => {
-    expect(console.log).not.toHaveBeenCalled();
     getTodayPassMinutes();
     expect(console.log).toHaveBeenCalled();
   });
