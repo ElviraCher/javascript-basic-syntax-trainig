@@ -1,4 +1,4 @@
-export function  createPage() {
+export function createPage() {
   const button = document.querySelector(".button");
 
   button.hidden = true;

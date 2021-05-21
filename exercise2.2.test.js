@@ -22,9 +22,21 @@ describe("getMonthName", () => {
     expect(console.log).toHaveBeenCalled();
   });
 
-  const months = [undefined, "January", "February", "March", "April",
-    "May", "June", "July", "August", "September", "November", "December"];
-  const nums = ['1', '2', '5'];
+  const months = [
+    undefined,
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "November",
+    "December",
+  ];
+  const nums = ["1", "2", "5"];
   nums.forEach(([number]) => {
     it(`calls console.log with ${months[number]}`, () => {
       jest.spyOn(window, "prompt").mockImplementation(() => number);
