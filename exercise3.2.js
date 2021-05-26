@@ -1,9 +1,9 @@
-export function getMultiplicationTable(number) {
+export function getMultiplicationTable(num) {
   for (let i = 1; i <= 9; i += 1) {
-    const result = number * i;
-    console.log(`${number} * ${i} = ${result}`);
+    const result = num * i;
+    console.log(`${num} * ${i} = ${result}`);
   }
-  if (!number) {
+  if (!num) {
     console.log("Function should be called with a number");
   }
 }
