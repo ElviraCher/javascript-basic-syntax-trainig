@@ -17,7 +17,6 @@ describe("getMonthName", () => {
   });
 
   it("calls console.log", () => {
-    expect(console.log).not.toHaveBeenCalled();
     getMonthName();
     expect(console.log).toHaveBeenCalled();
   });
